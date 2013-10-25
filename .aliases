@@ -1,0 +1,16 @@
+# terminal navigation with less keystrokes
+# shamelessly ripped from https://github.com/mathiasbynens
+
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+
+# this is awesome, thx!
+alias timer="echo "Timer started. Stop with Ctrl-D." && date && time cat && date
+
+# stick mvim to terminal
+alias mvim="/usr/local/bin/mvim -v"
+
+# tmux color
+alias tmux="TERM=screen-256color-bce tmux"
+
