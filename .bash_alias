@@ -5,6 +5,9 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 
+# shortcut to list also hidden files
+alias lsh="ls -la"
+
 # this is awesome, thx!
 #alias timer="echo 'Timer started. Stop with Ctrl-D.' && date && time cat && date
 
