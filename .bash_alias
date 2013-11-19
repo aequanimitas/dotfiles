@@ -32,8 +32,8 @@ alias mvim="/usr/local/bin/mvim -v"
 
 # edit hosts file
 alias changehosts="sudo vi /etc/hosts"
-alias changehosts-work="sudo cp /etc/hosts/hosts.workmode /etc/hosts"
-alias changehosts-relax="sudo cp /etc/hosts/hosts.relax /etc/hosts"
+alias changehosts-work="sudo cp /etc/hosts.workmode /etc/hosts"
+alias changehosts-relax="sudo cp /etc/hosts.relax /etc/hosts"
 
 # serve ruby-doc via python simple-server
 alias rubydocpy="cd ~/Documents/ruby_2_0_stdlib/ && python -m SimpleHTTPServer 20000 &"

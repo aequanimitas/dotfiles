@@ -17,3 +17,13 @@ function tmux_ns(){
     tmux new -s $1 
  fi
 }
+
+
+function wget_site(){
+ if [$1 -eq '']
+ then
+    echo 'URL should be given'
+ else
+   wget --recursive --no-clobber --page-requisites --html-extension --convert-links --restrict-file-names=windows --domains website.org --no-parent $1
+ fi
+}
