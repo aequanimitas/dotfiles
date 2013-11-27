@@ -49,5 +49,5 @@ nnoremap j gj
 nnoremap k gk
 
 function! RMEmbedMixins()
-  r~/.vim/code-snippets/rm-embed-mixins.txt
+  r~/.vim/code-snippets/rm-embed-mixins.scss
 endfunction

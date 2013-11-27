@@ -1,3 +1,4 @@
+source ~/.functions.sh
 source ~/.profile
 source ~/.bashrc
 source ~/.bash_alias
