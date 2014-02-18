@@ -2,6 +2,7 @@ source ~/.functions.sh
 source ~/.profile
 source ~/.bashrc
 source ~/.bash_alias
+source ~/.bash_alias_local
 
 # {{{
 # Node Completion - Auto-generated, do not touch.
