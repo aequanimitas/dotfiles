@@ -38,3 +38,5 @@ alias changehosts-nofb="sudo cp /etc/hosts.nofb /etc/hosts"
 
 # serve ruby-doc via python simple-server
 alias rubydocpy="cd ~/Documents/ruby_2_0_stdlib/ && python -m SimpleHTTPServer 20000 &"
+
+alias clr="clear"

@@ -12,13 +12,13 @@ set visualbell		" no sounds
 set autoread		" reload file into buffer when changed outside vim. eg: sass compilation
 set clipboard=unnamed " copy pasta
 
-if has("gui_running")
-  set background=dark
-  " let g:solarized_visibility = "high"
-  " let g:solarized_contrast = "high"
-  let g:solarized_termtrans = 1
-  colorscheme solarized
-endif
+"if has("gui_running")
+"  set background=dark
+"  " let g:solarized_visibility = "high"
+"  " let g:solarized_contrast = "high"
+"  let g:solarized_termtrans = 1
+"  colorscheme solarized
+"endif
 
 set visualbell				" be quiet
 
@@ -26,10 +26,6 @@ let mapleader=","
 
 augroup markdown
   au BufRead,BufNewFile *.md set filetype=markdown
-augroup END
-
-augroup ruby
-  au BufRead,BufNewFile *.rb 0r ~/.vim/code-snippets/utf8.vim
 augroup END
 
 inoremap <F1> <ESC>
@@ -47,7 +43,3 @@ inoremap <left> <nop>
 inoremap <right> <nop>
 nnoremap j gj
 nnoremap k gk
-
-function! RMEmbedMixins()
-  r~/.vim/code-snippets/rm-embed-mixins.scss
-endfunction
