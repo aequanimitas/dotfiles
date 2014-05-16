@@ -1,4 +1,6 @@
 set nocompatible
+execute pathogen#infect()
+set number
 
 " for vim-airline
 set t_Co=256
