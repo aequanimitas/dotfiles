@@ -1,12 +1,6 @@
 set nocompatible
-execute pathogen#infect()
-set number
-
-" for vim-airline
-set t_Co=256
-set laststatus=2
-
 set visualbell
+syntax on
 
 " disable arrow keys
 nnoremap <up> <nop>
