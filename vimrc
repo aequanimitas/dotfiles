@@ -1,5 +1,6 @@
 set nocompatible
 set visualbell
+set number
 syntax on
 
 " disable arrow keys
