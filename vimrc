@@ -9,3 +9,6 @@ nnoremap <down> <nop>
 nnoremap <right> <nop>
 nnoremap <left> <nop>
 
+execute pathogen#infect()
+set laststatus=2
+set t_Co=256
