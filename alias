@@ -1,5 +1,0 @@
-alias ..="cd .."
-alias start_weblog="nvm use 0.10.29; npm start"
-alias chrome_incognito="open ~/Applications/Google\ Chrome.app --args --incognito"
-alias ffox="open ~/Applications/Firefox.app"
-alias clr="clear"
