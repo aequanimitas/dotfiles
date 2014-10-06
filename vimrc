@@ -1,6 +1,7 @@
 set nocompatible
 set visualbell
 set number
+set colorcolumn 80
 syntax on
 
 " disable arrow keys
