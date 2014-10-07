@@ -2,6 +2,7 @@ set nocompatible
 set visualbell
 set number
 set colorcolumn 80
+set timeoutlen=1000 ttimeoutlen=0
 syntax on
 
 " disable arrow keys
