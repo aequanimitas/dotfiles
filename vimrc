@@ -1,7 +1,7 @@
 set nocompatible
 set visualbell
 set number
-set colorcolumn 80
+set colorcolumn=80
 set timeoutlen=1000 ttimeoutlen=0
 syntax on
 
@@ -14,3 +14,6 @@ nnoremap <left> <nop>
 execute pathogen#infect()
 set laststatus=2
 set t_Co=256
+
+" airline
+let g:airline#extensions#tabline#enabled = 1
