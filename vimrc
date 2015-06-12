@@ -23,10 +23,6 @@ let g:airline#extensions#tabline#enabled = 1
 map! ;; <Esc>
 map <Space> :w <CR>
 
-" for timestamping notes
-map ,ty :r! date "+\#\# \%A \%B \%d \%Y"<CR>
-map ,ts :r! date "+\#\#\# \%T"<CR>
-
 " for filetypes
 au BufNewFile,BufRead *.scss set filetype=scss
 au BufNewFile,BufRead *.md set filetype=markdown
