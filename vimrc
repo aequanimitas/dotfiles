@@ -22,8 +22,7 @@ let g:airline#extensions#tabline#enabled = 1
 " mappings
 map! ;; <Esc>
 map <Space> :w <CR>
-" redraw manually for now
-map ,wt !printf '\033k%\033\\' <cr>
+map ,wt :silent !printf '\033k%\033\\'<cr> :redraw<cr>
 
 " for filetypes
 au BufNewFile,BufRead *.scss set filetype=scss
