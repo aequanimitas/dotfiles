@@ -1,0 +1,8 @@
+[alias]
+  c    = commit
+  cv   = commit -v
+  lsoe = ls-files --others --exclude-standard
+  l    = log
+  lp   = log -p
+  lodg = log --oneline --decorate --graph
+  st   = status
