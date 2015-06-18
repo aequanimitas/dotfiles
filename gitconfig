@@ -5,4 +5,5 @@
   l    = log
   lp   = log -p
   lodg = log --oneline --decorate --graph
-  st   = status
+  stu   = status -u
+  lsoex = ls-files --others --exclude-standard
