@@ -3,6 +3,7 @@ set visualbell
 set number
 set colorcolumn=92
 set timeoutlen=1000 ttimeoutlen=0
+colorscheme koehler
 filetype indent plugin on
 syntax on
 
@@ -44,3 +45,5 @@ map <C-k> <C-W>k
 " for filetypes
 au BufNewFile,BufRead *.scss set filetype=scss
 au BufNewFile,BufRead *.md set filetype=markdown
+
+command! -nargs=+ Silent execute 'silent <args>' | redraw! | copen
