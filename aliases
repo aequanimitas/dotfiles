@@ -1,3 +1,8 @@
 alias clr="clear"
 alias ..="cd .."
 alias catn="cat -n"
+
+# For osx
+alias google-chrome-cask='open ~/Applications/"Google Chrome".app --new --args -incognito'
+alias dropbox-cask='open ~/Applications/Dropbox.app'
+alias vlc-cask='open ~/Applications/VLC.app'

@@ -1,6 +1,8 @@
 dotfiles
 ========
 
+- install pathogen first: https://github.com/tpope/vim-pathogen
+
 #### ```gitconfig```
 - on local repo, do ```git config include.path path/to/gitconfig```
 
