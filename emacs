@@ -4,3 +4,4 @@
 (setq org-log-done t)
 
 (setq org-agenda-files '("~/Dropbox/Notes/org"))
+(setq org-log-todo 'time)
