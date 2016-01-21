@@ -22,14 +22,27 @@
    ("@stoic")
    ("@programming")
    ("@commiment")
-   ("@for archive")
-   ("@archived")
-   ("@quick-chores")
+   ("@archive")
+   ("@quick")
+   ("@bedroom")
+   ("@kitchen")
+   ("@dirty")
+   ("@CR")
+   ("@upstairs")
+   ("@downstairs")
+   ("@bodega")
+   ("@terrace")
+   ("@desk")
+   ("@chair")
+   ("@table")
+   ("@dining")
+   ("@cabinets")
    ("@chores")
    ("@download")
    ("@mindset")
    ("@errands")
    ("@firetablet")
+   ("@bike")
    ("@phone")
    ("@email")
    ("@kitchen")
@@ -44,7 +57,17 @@
    ("@evening")
    ("@afternoon")
    ("@code")
+   ("@later")
+   ("@watch")
+   ("@read")
+   ("@urgent")
+   ("@python")
+   ("@alcohol")
+   ("@random")
+   ("@thoughts")
+   ("@vice")
    ("@weekend")))
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -52,7 +75,7 @@
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
    (quote
-    ("9b59e147dbbde5e638ea1cde5ec0a358d5f269d27bd2b893a0947c4a867e14c1" default))))
+    ("58c6711a3b568437bab07a30385d34aacf64156cc5137ea20e799984f4227265" "72a81c54c97b9e5efcc3ea214382615649ebb539cb4f2fe3a46cd12af72c7607" "9b59e147dbbde5e638ea1cde5ec0a358d5f269d27bd2b893a0947c4a867e14c1" default))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
