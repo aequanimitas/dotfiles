@@ -1,7 +1,6 @@
 alias clr="clear"
 alias ..="cd .."
 alias catn="cat -n"
-alias emacs="emacs -nw"
 
 # For osx
 alias google-chrome-cask='open ~/Applications/"Google Chrome".app --new --args -incognito'
