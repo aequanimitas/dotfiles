@@ -5,3 +5,4 @@
 
 (setq org-agenda-files '("~/Dropbox/Notes/org"))
 (setq org-log-todo 'time)
+(setq org-todo-keywords `((sequence "TODO" "IN-PROGRESS" "WAITING" "DONE")))
