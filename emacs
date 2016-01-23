@@ -7,10 +7,10 @@
 (load-theme 'hickey t)
 (setq org-log-todo 'time)
 (setq org-todo-keywords '(
-  (sequence "TODO" "IN-PROGRESS" "WAITING" "DONE")
-  (sequence "DEFERRED" "DELEGATED")
-  (sequence "SOMEDAY" "REFERENCE")
-  (sequence "PROJECT")
+  (sequence "TODO(t)" "IN-PROGRESS(i)" "DONE(o)")
+  (sequence "DEFERRED(d)" "CALENDAR(c)" "NEXT ACTION(n)" "|" "DELEGATED(l)")
+  (sequence "SOMEDAY(s)" "REFERENCE(r)")
+  (sequence "PROJECT(p)")
 ))
 (setq org-tag-alist '(
    ("@work")
