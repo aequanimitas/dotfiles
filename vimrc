@@ -3,6 +3,11 @@ set visualbell
 set number
 set colorcolumn=92
 set timeoutlen=1000 ttimeoutlen=0
+
+" force write directly to the file instead of writing to a new one, HMR not
+" firing automatically (webpack)
+" https://github.com/webpack/webpack/issues/781#issuecomment-95523711
+set backupcopy=yes
 colorscheme koehler
 filetype indent plugin on
 syntax on
