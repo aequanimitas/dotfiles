@@ -6,7 +6,12 @@
 (setq org-agenda-files '("~/Dropbox/Notes/org"))
 (load-theme 'hickey t)
 (setq org-log-todo 'time)
-(setq org-todo-keywords '((sequence "TODO" "IN-PROGRESS" "WAITING" "DONE")))
+(setq org-todo-keywords '(
+  (sequence "TODO" "IN-PROGRESS" "WAITING" "DONE")
+  (sequence "DEFERRED" "DELEGATED")
+  (sequence "SOMEDAY" "REFERENCE")
+  (sequence "PROJECT")
+))
 (setq org-tag-alist '(
    ("@work")
    ("@desktop")
