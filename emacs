@@ -22,6 +22,21 @@
    ("@car")
    ("@project")
 ))
+
+;; capture templates ( M-x org-captue )
+(setq org-capture-templates
+  `(("j" "Journal" entry (file "~/Dropbox/Notes/org/journal.org")
+      "* Journal: \n\n%(org-insert-time-stamp (org-read-date nil t \"+0d\"))\n")
+    ("s" "Someday" entry (file "~/Dropbox/Notes/org/someday.org")
+      "* SOMEDAY: \n\n%(org-insert-time-stamp (org-read-date nil t \"+0d\"))\n")
+    ("i" "IDEA" entry (file "~/Dropbox/Notes/org/organizer.org")
+      "* IDEA: \n\n%(org-insert-time-stamp (org-read-date nil t \"+0d\"))\n")
+    ("t" "TODO" entry (file "~/Dropbox/Notes/org/organizer.org")
+      "* TODO: \n\n<SCHEDULED %(org-insert-time-stamp (org-read-date nil t \"+0d\"))>\n")
+))
+;; only show tasks without schedule in global TODO
+(setq org-agenda-todo-ignore-scheduled (quote all))
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
