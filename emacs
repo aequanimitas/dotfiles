@@ -31,8 +31,13 @@
       "* SOMEDAY: \n\n%(org-insert-time-stamp (org-read-date nil t \"+0d\"))\n")
     ("i" "IDEA" entry (file "~/Dropbox/Notes/org/organizer.org")
       "* IDEA: \n\n%(org-insert-time-stamp (org-read-date nil t \"+0d\"))\n")
-    ("t" "TODO [#A] " entry (file "~/Dropbox/Notes/org/organizer.org")
-      "* TODO \n\n<SCHEDULED %(org-insert-time-stamp (org-read-date nil t \"+0d\"))>\n")
+    ("t" "TODO with priority levels")
+    ("ta" "TODO [#A]" entry (file "~/Dropbox/Notes/org/organizer.org")
+      "* TODO [#A] \n\nSCHEDULED %(org-insert-time-stamp (org-read-date nil t \"+0d\"))\n")
+    ("tb" "TODO [#B]" entry (file "~/Dropbox/Notes/org/organizer.org")
+      "* TODO [#A] \n\nSCHEDULED %(org-insert-time-stamp (org-read-date nil t \"+0d\"))\n")
+    ("tc" "TODO [#C]" entry (file "~/Dropbox/Notes/org/organizer.org")
+      "* TODO [#A] \n\nSCHEDULED %(org-insert-time-stamp (org-read-date nil t \"+0d\"))\n")
 ))
 
 ;; only show tasks without schedule in global TODO
