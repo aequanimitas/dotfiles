@@ -37,6 +37,13 @@
 ;; only show tasks without schedule in global TODO
 (setq org-agenda-todo-ignore-scheduled (quote all))
 
+;; custom commands
+(setq org-agenda-custom-commands `(
+  ("c" "Code related tasks" (
+    (agenda "")
+    (tags "@Code")))
+))
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
