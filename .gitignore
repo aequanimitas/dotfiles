@@ -1,2 +1,3 @@
 *.swp
 .bash_alias_local
+vim/*

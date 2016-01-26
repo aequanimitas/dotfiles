@@ -26,13 +26,18 @@
 ;; capture templates ( M-x org-captue )
 (setq org-capture-templates
   `(("j" "Journal" entry (file "~/Dropbox/Notes/org/journal.org")
-      "* Journal: \n\n%(org-insert-time-stamp (org-read-date nil t \"+0d\"))\n")
+      "* Journal \n\n%(org-insert-time-stamp (org-read-date nil t \"+0d\"))\n")
     ("s" "Someday" entry (file "~/Dropbox/Notes/org/someday.org")
-      "* SOMEDAY: \n\n%(org-insert-time-stamp (org-read-date nil t \"+0d\"))\n")
+      "* SOMEDAY \n\n%(org-insert-time-stamp (org-read-date nil t \"+0d\"))\n")
     ("i" "IDEA" entry (file "~/Dropbox/Notes/org/organizer.org")
-      "* IDEA: \n\n%(org-insert-time-stamp (org-read-date nil t \"+0d\"))\n")
-    ("t" "TODO" entry (file "~/Dropbox/Notes/org/organizer.org")
-      "* TODO \n\nSCHEDULED %(org-insert-time-stamp (org-read-date nil t \"+0d\"))>\n")
+      "* IDEA \n\n%(org-insert-time-stamp (org-read-date nil t \"+0d\"))\n")
+    ("t" "TODO with priority levels")
+    ("ta" "TODO [#A]" entry (file "~/Dropbox/Notes/org/organizer.org")
+      "* TODO [#A] \n\nSCHEDULED %(org-insert-time-stamp (org-read-date nil t \"+0d\"))\n")
+    ("tb" "TODO [#B]" entry (file "~/Dropbox/Notes/org/organizer.org")
+      "* TODO [#A] \n\nSCHEDULED %(org-insert-time-stamp (org-read-date nil t \"+0d\"))\n")
+    ("tc" "TODO [#C]" entry (file "~/Dropbox/Notes/org/organizer.org")
+      "* TODO [#A] \n\nSCHEDULED %(org-insert-time-stamp (org-read-date nil t \"+0d\"))\n")
 ))
 
 ;; only show tasks without schedule in global TODO
