@@ -32,7 +32,7 @@
     ("i" "IDEA" entry (file "~/Dropbox/Notes/org/organizer.org")
       "* IDEA: \n\n%(org-insert-time-stamp (org-read-date nil t \"+0d\"))\n")
     ("t" "TODO" entry (file "~/Dropbox/Notes/org/organizer.org")
-      "* TODO \n\n<SCHEDULED %(org-insert-time-stamp (org-read-date nil t \"+0d\"))>\n")
+      "* TODO \n\nSCHEDULED %(org-insert-time-stamp (org-read-date nil t \"+0d\"))>\n")
 ))
 
 ;; only show tasks without schedule in global TODO
