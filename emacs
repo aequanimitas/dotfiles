@@ -1,7 +1,7 @@
-(require 'org)
 (define-key global-map "\C-cl" 'org-store-link)
 (define-key global-map "\C-ca" 'org-agenda)
 (setq org-log-done t)
+
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
 (load-theme 'hickey t)
 (setq org-log-todo 'time)
@@ -12,6 +12,7 @@
   (sequence "SOMEDAY(s)" "REFERENCE(r)")
   (sequence "PROJECT(p)")
 ))
+
 ;; capture templates ( M-x org-captue )
 (setq org-capture-templates
   `(("j" "Journal" entry (file "~/Dropbox/Notes/org/journal.org")
