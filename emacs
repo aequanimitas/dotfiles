@@ -3,26 +3,15 @@
 (define-key global-map "\C-ca" 'org-agenda)
 (setq org-log-done t)
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
-;; (setq org-agenda-files '("~/Dropbox/Notes/org"))
 (load-theme 'hickey t)
 (setq org-log-todo 'time)
+
 (setq org-todo-keywords '(
   (sequence "TODO(t)" "IN-PROGRESS(i)" "DONE(o)")
   (sequence "DEFERRED(d)" "CALENDAR(c)" "NEXT ACTION(n)" "|" "DELEGATED(l)")
   (sequence "SOMEDAY(s)" "REFERENCE(r)")
   (sequence "PROJECT(p)")
 ))
-(setq org-tag-alist '(
-   ("@work")
-   ("@desktop")
-   ("@laptop")
-   ("@home")
-   ("@k74")
-   ("@metroville")
-   ("@car")
-   ("@project")
-))
-
 ;; capture templates ( M-x org-captue )
 (setq org-capture-templates
   `(("j" "Journal" entry (file "~/Dropbox/Notes/org/journal.org")
@@ -58,7 +47,9 @@
  '(custom-safe-themes
    (quote
     ("72a81c54c97b9e5efcc3ea214382615649ebb539cb4f2fe3a46cd12af72c7607" "58c6711a3b568437bab07a30385d34aacf64156cc5137ea20e799984f4227265" default)))
- '(org-agenda-files (quote ("~/Dropbox/Notes/org/organizer.org"))))
+ '(org-agenda-files
+   (quote
+    ("~/Dropbox/Notes/org/chores.org" "~/Dropbox/Notes/org/organizer.org"))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
