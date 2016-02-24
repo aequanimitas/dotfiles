@@ -15,9 +15,8 @@ for i in $(ls); do
         git config commit.template ~/.gitmessage.txt
 	if [ -e  "$i/package.json" ];
 	then 
-		echo "Installing $i dependencies..."
-		cd $i
                 # install dependecies
+		echo "Installing $i dependencies..."
 		npm install
 	fi
 	cd ..
