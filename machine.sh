@@ -1,4 +1,4 @@
-for i in tmux git bash-completion postgresql postgresql-contrib emacs python-dev; do
+for i in tmux git bash-completion postgresql postgresql-contrib emacs python-dev libfreetype6 libfreetype6-dev libpng libpng-dev; do
 	apt-get install $i;
 done;
 
