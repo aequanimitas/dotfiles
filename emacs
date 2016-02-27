@@ -16,7 +16,7 @@
 ;; capture templates ( M-x org-captue )
 (setq org-capture-templates
   `(("j" "Journal" entry (file "~/Dropbox/Notes/org/journal.org")
-      "* Journal \n\n%(org-insert-time-stamp (org-read-date nil t \"+0d\"))\n")
+      "* %(org-insert-time-stamp (org-read-date nil t \"+0d\") (current-time)) Journal Entry (change me): \n")
     ("s" "Someday" entry (file "~/Dropbox/Notes/org/someday.org")
       "* SOMEDAY \n\n%(org-insert-time-stamp (org-read-date nil t \"+0d\"))\n")
     ("i" "IDEA" entry (file "~/Dropbox/Notes/org/organizer.org")
