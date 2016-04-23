@@ -50,5 +50,10 @@ map <C-k> <C-W>k
 " for filetypes
 au BufNewFile,BufRead *.scss set filetype=scss
 au BufNewFile,BufRead *.md set filetype=markdown
+au BufNewFile,BufRead *.toml set filetype=toml
+au FileType javascript setlocal shiftwidth=2 tabstop=2
+au FileType scss setlocal shiftwidth=2 tabstop=2
+au FileType toml setlocal shiftwidth=4 tabstop=4
+au FileType json setlocal shiftwidth=2 tabstop=2 expandtab
 
 command! -nargs=+ Silent execute 'silent <args>' | redraw! | copen
