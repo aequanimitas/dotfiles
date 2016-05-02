@@ -1,5 +1,10 @@
 (define-key global-map "\C-cl" 'org-store-link)
 (define-key global-map "\C-ca" 'org-agenda)
+(define-key global-map "\C-cc" 'org-capture)
+(global-set-key (kbd "C-c o")
+                (lambda () (interactive) (find-file "~/Dropbox/Notes/org/organizer.org")))
+
+(setq org-export-coding-system 'utf-8)
 (setq org-log-done t)
 
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
@@ -14,19 +19,33 @@
 
 ;; capture templates ( M-x org-captue )
 (setq org-capture-templates
-  `(("j" "Journal" entry (file "~/Dropbox/Notes/org/journal.org")
-      "* %(org-insert-time-stamp (org-read-date nil t \"+0d\") (current-time)) Journal Entry (change me): \n")
-    ("s" "Someday" entry (file "~/Dropbox/Notes/org/someday.org")
-      "* SOMEDAY \n\n%(org-insert-time-stamp (org-read-date nil t \"+0d\"))\n")
-    ("i" "IDEA" entry (file "~/Dropbox/Notes/org/organizer.org")
-      "* IDEA %(org-insert-time-stamp (org-read-date nil t \"+0d\") (current-time)): ")
-    ("t" "TODO with priority levels")
-    ("ta" "TODO [#A]" entry (file "~/Dropbox/Notes/org/organizer.org")
-      "* TODO [#A] \n\nSCHEDULED %(org-insert-time-stamp (org-read-date nil t \"+0d\"))\n")
-    ("tb" "TODO [#B]" entry (file "~/Dropbox/Notes/org/organizer.org")
-      "* TODO [#A] \n\nSCHEDULED %(org-insert-time-stamp (org-read-date nil t \"+0d\"))\n")
-    ("tc" "TODO [#C]" entry (file "~/Dropbox/Notes/org/organizer.org")
-      "* TODO [#A] \n\nSCHEDULED %(org-insert-time-stamp (org-read-date nil t \"+0d\"))\n")
+  `(("j" 
+     "Journal" 
+     entry 
+     (file+headline "~/Dropbox/Notes/org/organizer.org" "JOURNAL")
+      "** %(org-insert-time-stamp (org-read-date nil t \"+0d\") 
+          (current-time)) Journal Entry (change me): \n")
+    ("i" 
+     "IDEA" 
+     entry 
+     (file+headline "~/Dropbox/Notes/org/organizer.org" "IDEA")
+      "** IDEA %(org-insert-time-stamp (org-read-date nil t \"+0d\") (current-time)): ")
+    ("t" "TODOS")
+    ("td" "Create a daily todo, especially if you're swamped")
+    ("tda" "Daily" entry (file+headline "~/Dropbox/Notes/org/organizer.org" "DAILY TODO")
+      "* TODO \n\nSCHEDULED %(org-insert-time-stamp (org-read-date nil t \"+0d\"))\n")
+    ("tp" "Project ToDos")
+    ("tps" "TODO for Sentire" entry (file+headline "~/Dropbox/Notes/org/organizer.org" "Sentire")
+      "*** TODO Sentire: \n\nSCHEDULED %(org-insert-time-stamp (org-read-date nil t \"+0d\"))\n")
+    ("tpj" "TODO for JackMurat Coffee" entry (file+headline "~/Dropbox/Notes/org/organizer.org" "JackMurat")
+      "*** TODO JackMurat:       
+       \n\nSCHEDULED %(org-insert-time-stamp (org-read-date nil t \"+0d\"))\n")
+    ("tpp" "TODO for portoflio in htavenido.com" entry (file+headline "~/Dropbox/Notes/org/organizer.org" "Portfolio")
+      "*** TODO Portoflio: \n\nSCHEDULED %(org-insert-time-stamp (org-read-date nil t \"+0d\"))\n")
+    ("tpc" "TODO for Completo.io" entry (file+headline "~/Dropbox/Notes/org/organizer.org" "Completo.io")
+      "*** TODO Completo.io: \n\nSCHEDULED %(org-insert-time-stamp (org-read-date nil t \"+0d\"))\n")
+    ("tpu" "TODO for Curo" entry (file+headline "~/Dropbox/Notes/org/organizer.org" "Curo")
+      "*** TODO Curo: \n\nSCHEDULED %(org-insert-time-stamp (org-read-date nil t \"+0d\"))\n")
 ))
 
 ;; only show tasks without schedule in global TODO
