@@ -33,19 +33,20 @@
     ("t" "TODOS")
     ("td" "Create a daily todo, especially if you're swamped")
     ("tda" "Daily" entry (file+headline "~/Dropbox/Notes/org/organizer.org" "DAILY TODO")
-      "* TODO \n\nSCHEDULED %(org-insert-time-stamp (org-read-date nil t \"+0d\"))\n")
+      "* TODO %(org-insert-time-stamp (org-read-date nil t \"+0d\"))
+         \n\n    SCHEDULED: %(org-insert-time-stamp (org-read-date nil t \"+0d\"))\n")
     ("tp" "Project ToDos")
     ("tps" "TODO for Sentire" entry (file+headline "~/Dropbox/Notes/org/organizer.org" "Sentire")
-      "*** TODO Sentire: \n\nSCHEDULED %(org-insert-time-stamp (org-read-date nil t \"+0d\"))\n")
+      "*** TODO Sentire: \n\n    SCHEDULED: %(org-insert-time-stamp (org-read-date nil t \"+0d\"))\n")
     ("tpj" "TODO for JackMurat Coffee" entry (file+headline "~/Dropbox/Notes/org/organizer.org" "JackMurat")
       "*** TODO JackMurat:       
-       \n\nSCHEDULED %(org-insert-time-stamp (org-read-date nil t \"+0d\"))\n")
+       \n\n    SCHEDULED: %(org-insert-time-stamp (org-read-date nil t \"+0d\"))\n")
     ("tpp" "TODO for portoflio in htavenido.com" entry (file+headline "~/Dropbox/Notes/org/organizer.org" "Portfolio")
-      "*** TODO Portoflio: \n\nSCHEDULED %(org-insert-time-stamp (org-read-date nil t \"+0d\"))\n")
+      "*** TODO Portoflio: \n\n    SCHEDULED: %(org-insert-time-stamp (org-read-date nil t \"+0d\"))\n")
     ("tpc" "TODO for Completo.io" entry (file+headline "~/Dropbox/Notes/org/organizer.org" "Completo.io")
-      "*** TODO Completo.io: \n\nSCHEDULED %(org-insert-time-stamp (org-read-date nil t \"+0d\"))\n")
+      "*** TODO Completo.io: \n\n    SCHEDULED: %(org-insert-time-stamp (org-read-date nil t \"+0d\"))\n")
     ("tpu" "TODO for Curo" entry (file+headline "~/Dropbox/Notes/org/organizer.org" "Curo")
-      "*** TODO Curo: \n\nSCHEDULED %(org-insert-time-stamp (org-read-date nil t \"+0d\"))\n")
+      "*** TODO Curo: \n\n    SCHEDULED: %(org-insert-time-stamp (org-read-date nil t \"+0d\"))\n")
 ))
 
 ;; only show tasks without schedule in global TODO
@@ -57,6 +58,10 @@
     (agenda "")
     (tags "@Code")))
 ))
+
+(custom-set-variables
+  '(org-priority-faces (quote ((65 . "DeepPink") (66 . "firebrick") (67 . "tomato"))))
+)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
