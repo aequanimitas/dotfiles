@@ -54,11 +54,11 @@
       "*** TODO [#C] JackMurat: \n\nSCHEDULED: %(org-insert-time-stamp (org-read-date nil t \"+0d\"))\n")
 
     ("tpb" "TODO for Job search")
-    ("tpja" "TODO for Jobsearch, Priority level A" entry (file+headline "~/Dropbox/Notes/org/organizer.org" "Jobsearch")
+    ("tpba" "TODO for Jobsearch, Priority level A" entry (file+headline "~/Dropbox/Notes/org/organizer.org" "Jobsearch")
       "*** TODO [#A] Jobsearch: \n\nSCHEDULED: %(org-insert-time-stamp (org-read-date nil t \"+0d\"))\n")
-    ("tpjb" "TODO for Jobsearch, Priority level B" entry (file+headline "~/Dropbox/Notes/org/organizer.org" "Jobsearch")
+    ("tpbb" "TODO for Jobsearch, Priority level B" entry (file+headline "~/Dropbox/Notes/org/organizer.org" "Jobsearch")
       "*** TODO [#B] Jobsearch: \n\nSCHEDULED: %(org-insert-time-stamp (org-read-date nil t \"+0d\"))\n")
-    ("tpjc" "TODO for Jobsearch, Priority level C" entry (file+headline "~/Dropbox/Notes/org/organizer.org" "Jobsearch")
+    ("tpbc" "TODO for Jobsearch, Priority level C" entry (file+headline "~/Dropbox/Notes/org/organizer.org" "Jobsearch")
       "*** TODO [#C] Jobsearch: \n\nSCHEDULED: %(org-insert-time-stamp (org-read-date nil t \"+0d\"))\n")
 
     ("tpp" "TODO for Profile and Portfolio (cover letters, resume, site)")
