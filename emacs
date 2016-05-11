@@ -45,16 +45,28 @@
     ("tpsc" "TODO for Sentire Priority level C" entry (file+headline "~/Dropbox/Notes/org/organizer.org" "Sentire")
       "*** TODO [#C] Sentire: \n\nSCHEDULED: %(org-insert-time-stamp (org-read-date nil t \"+0d\"))\n")
 
-    ("tpj" "TODO for JackMurat Coffee" entry (file+headline "~/Dropbox/Notes/org/organizer.org" "JackMurat")
-      "*** TODO JackMurat:       
-       \n\n    SCHEDULED: %(org-insert-time-stamp (org-read-date nil t \"+0d\"))\n")
+    ("tpj" "TODO for JackMurat Coffee")
+    ("tpja" "TODO for JackMurat Coffee, Priority level A" entry (file+headline "~/Dropbox/Notes/org/organizer.org" "JackMurat")
+      "*** TODO [#A] JackMurat: \n\nSCHEDULED: %(org-insert-time-stamp (org-read-date nil t \"+0d\"))\n")
+    ("tpjb" "TODO for JackMurat Coffee, Priority level A" entry (file+headline "~/Dropbox/Notes/org/organizer.org" "JackMurat")
+      "*** TODO [#B] JackMurat: \n\nSCHEDULED: %(org-insert-time-stamp (org-read-date nil t \"+0d\"))\n")
+    ("tpjc" "TODO for JackMurat Coffee, Priority level A" entry (file+headline "~/Dropbox/Notes/org/organizer.org" "JackMurat")
+      "*** TODO [#C] JackMurat: \n\nSCHEDULED: %(org-insert-time-stamp (org-read-date nil t \"+0d\"))\n")
+
+    ("tpb" "TODO for Job search")
+    ("tpja" "TODO for Jobsearch, Priority level A" entry (file+headline "~/Dropbox/Notes/org/organizer.org" "Jobsearch")
+      "*** TODO [#A] Jobsearch: \n\nSCHEDULED: %(org-insert-time-stamp (org-read-date nil t \"+0d\"))\n")
+    ("tpjb" "TODO for Jobsearch, Priority level B" entry (file+headline "~/Dropbox/Notes/org/organizer.org" "Jobsearch")
+      "*** TODO [#B] Jobsearch: \n\nSCHEDULED: %(org-insert-time-stamp (org-read-date nil t \"+0d\"))\n")
+    ("tpjc" "TODO for Jobsearch, Priority level C" entry (file+headline "~/Dropbox/Notes/org/organizer.org" "Jobsearch")
+      "*** TODO [#C] Jobsearch: \n\nSCHEDULED: %(org-insert-time-stamp (org-read-date nil t \"+0d\"))\n")
 
     ("tpp" "TODO for Profile and Portfolio (cover letters, resume, site)")
-    ("tppa" "TODO for Profile and Portfolio, priority level #A" entry (file+headline "~/Dropbox/Notes/org/organizer.org" "Portfolio")
+    ("tppa" "TODO for Profile and Portfolio, priority level #A" entry (file+headline "~/Dropbox/Notes/org/organizer.org" "htavenido.com")
       "*** TODO [#A] Portoflio: \n\nSCHEDULED: %(org-insert-time-stamp (org-read-date nil t \"+0d\"))\n")
-    ("tppb" "TODO for Profile and Portfolio, priority level #B" entry (file+headline "~/Dropbox/Notes/org/organizer.org" "Portfolio")
+    ("tppb" "TODO for Profile and Portfolio, priority level #B" entry (file+headline "~/Dropbox/Notes/org/organizer.org" "htavenido.com")
       "*** TODO [#B] Portoflio: \n\nSCHEDULED: %(org-insert-time-stamp (org-read-date nil t \"+0d\"))\n")
-    ("tppc" "TODO for Profile and Portfolio, priority level #C" entry (file+headline "~/Dropbox/Notes/org/organizer.org" "Portfolio")
+    ("tppc" "TODO for Profile and Portfolio, priority level #C" entry (file+headline "~/Dropbox/Notes/org/organizer.org" "htavenido.com")
       "*** TODO [#C] Portoflio: \n\nSCHEDULED: %(org-insert-time-stamp (org-read-date nil t \"+0d\"))\n")
 
     ("tpc" "TODO for Completo.io (catch basin for all!)")
@@ -65,8 +77,13 @@
     ("tpcc" "TODO for Completo.io, priority level A" entry (file+headline "~/Dropbox/Notes/org/organizer.org" "Completo.io")
       "*** TODO [#C] Completo.io: \n\nSCHEDULED: %(org-insert-time-stamp (org-read-date nil t \"+0d\"))\n")
 
-    ("tpu" "TODO for Curo" entry (file+headline "~/Dropbox/Notes/org/organizer.org" "Curo")
-      "*** TODO Curo: \n\n    SCHEDULED: %(org-insert-time-stamp (org-read-date nil t \"+0d\"))\n")
+    ("tpu" "TODO for Curo")
+    ("tpua" "TODO for Curo, priority level A" entry (file+headline "~/Dropbox/Notes/org/organizer.org" "Curo")
+      "*** TODO [#A] Curo: \n\nSCHEDULED: %(org-insert-time-stamp (org-read-date nil t \"+0d\"))\n")
+    ("tpub" "TODO for Curo, priority level B" entry (file+headline "~/Dropbox/Notes/org/organizer.org" "Curo")
+      "*** TODO [#B] Curo: \n\nSCHEDULED: %(org-insert-time-stamp (org-read-date nil t \"+0d\"))\n")
+    ("tpuc" "TODO for Curo, priority level C" entry (file+headline "~/Dropbox/Notes/org/organizer.org" "Curo")
+      "*** TODO [#C] Curo: \n\nSCHEDULED: %(org-insert-time-stamp (org-read-date nil t \"+0d\"))\n")
 ))
 
 ;; only show tasks without schedule in global TODO
