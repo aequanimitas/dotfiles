@@ -8,6 +8,9 @@
 (setq org-log-done t)
 
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
+(require 'org)
+(require 'org-install)
+(add-to-list 'org-modules "org-habit")
 (load-theme 'hickey t)
 (setq org-log-todo 'time)
 (setq org-todo-keywords '(
@@ -16,6 +19,10 @@
   (sequence "SOMEDAY(s)" "REFERENCE(r)")
   (sequence "PROJECT(p)")
 ))
+
+(setq org-todo-keyword-faces
+  '(("TODO" . org-warning) ("IN-PROGRESS" . "yellow"))
+)
 
 ;; capture templates ( M-x org-captue )
 (setq org-capture-templates
@@ -33,7 +40,7 @@
     ("t" "TODOS")
     ("td" "Create a daily todo, especially if you're swamped")
     ("tda" "Daily" entry (file+headline "~/Dropbox/Notes/org/organizer.org" "DAILY TODO")
-      "* TODO %(org-insert-time-stamp (org-read-date nil t \"+0d\"))
+      "* TODO Today
          \n\n    SCHEDULED: %(org-insert-time-stamp (org-read-date nil t \"+0d\"))\n")
     ("tp" "Project ToDos")
 
