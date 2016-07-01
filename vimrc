@@ -57,3 +57,6 @@ au FileType toml setlocal shiftwidth=4 tabstop=4
 au FileType json setlocal shiftwidth=2 tabstop=2 expandtab
 
 command! -nargs=+ Silent execute 'silent <args>' | redraw! | copen
+
+" ignore directories for ctrl+p
+let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist)|(\.(swp|ico|git|svn))$'
