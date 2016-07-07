@@ -4,6 +4,12 @@
 (global-set-key (kbd "C-c o")
                 (lambda () (interactive) (find-file "~/Dropbox/Notes/org/organizer.org")))
 
+;; open files automatically on start
+(find-file "~/Dropbox/Notes/org/organizer.org")
+(find-file "~/Dropbox/Notes/org/journal.org")
+(find-file "~/Dropbox/Notes/org/projects.org")
+(find-file "~/Dropbox/Notes/org/reference.org")
+
 (setq org-export-coding-system 'utf-8)
 (setq org-log-done t)
 
@@ -41,7 +47,10 @@
     ("td" "Create a daily todo, especially if you're swamped")
     ("tda" "Daily" entry (file+headline "~/Dropbox/Notes/org/organizer.org" "DAILY TODO")
       "* TODO Today
-         \n\n    SCHEDULED: %(org-insert-time-stamp (org-read-date nil t \"+0d\"))\n")
+         \n - [ ] Meals
+         \n   - [ ] Morning
+         \n   - [ ] Evening
+         \n\n SCHEDULED: %(org-insert-time-stamp (org-read-date nil t \"+0d\"))\n")
     ("tp" "Project ToDos")
 
     ("tps" "TODO for Sentire, Choose priority")
