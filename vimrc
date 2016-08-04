@@ -61,4 +61,4 @@ au FileType handlebars setlocal shiftwidth=2 tabstop=2 expandtab
 command! -nargs=+ Silent execute 'silent <args>' | redraw! | copen
 
 " ignore directories for ctrl+p
-let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist)|(\.(swp|ico|git|svn))$'
+let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist)|(\.(swp|ico|git|svn|png|jpg))$'
