@@ -47,6 +47,10 @@ map <C-h> <C-W>h
 map <C-j> <C-W>j
 map <C-k> <C-W>k
 
+" for elixir
+map ,et :w \|:!mix test<cr>
+map ,re :w \|:!iex -S mix<cr>
+
 " for filetypes
 au BufNewFile,BufRead *.scss set filetype=scss
 au BufNewFile,BufRead *.md set filetype=markdown
