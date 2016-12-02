@@ -1,5 +1,6 @@
 for i in tmux git bash-completion postgresql postgresql-contrib emacs \
-	 python-dev libfreetype6 libfreetype6-dev libpng libpng-dev cmake qt4-qmake qt4-default; do
+	 python-dev libfreetype6 libfreetype6-dev libpng libpng-dev cmake qt4-qmake qt4-default \
+	 mit-scheme; do
 	apt-get install $i;
 done;
 

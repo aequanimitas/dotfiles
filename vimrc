@@ -54,5 +54,15 @@ map ,re :w \|:!iex -S mix<cr>
 " for filetypes
 au BufNewFile,BufRead *.scss set filetype=scss
 au BufNewFile,BufRead *.md set filetype=markdown
+au BufNewFile,BufRead *.toml set filetype=toml
+au BufNewFile,BufRead *.hbs set filetype=handlebars
+au FileType javascript setlocal shiftwidth=2 tabstop=2
+au FileType scss setlocal shiftwidth=2 tabstop=2
+au FileType toml setlocal shiftwidth=4 tabstop=4
+au FileType json setlocal shiftwidth=2 tabstop=2 expandtab
+au FileType handlebars setlocal shiftwidth=2 tabstop=2 expandtab
 
 command! -nargs=+ Silent execute 'silent <args>' | redraw! | copen
+
+" ignore directories for ctrl+p
+let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist)|(\.(swp|ico|git|svn|png|jpg))$'
