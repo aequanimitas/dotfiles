@@ -24,6 +24,7 @@
 
 (load-theme 'hickey t)
 (setq org-log-todo 'time)
+
 (setq org-todo-keywords '(
   (sequence "TODO(t)" "IN-PROGRESS(i)" "DONE(o)")
   (sequence "DEFERRED(d)" "CALENDAR(c)" "NEXT ACTION(n)" "|" "DELEGATED(l)")
