@@ -17,6 +17,11 @@
 (require 'org)
 (require 'org-install)
 (add-to-list 'org-modules "org-habit")
+
+(require 'package)
+(add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
+(package-initialize)
+
 (load-theme 'hickey t)
 (setq org-log-todo 'time)
 (setq org-todo-keywords '(
