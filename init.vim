@@ -14,6 +14,8 @@ Plug 'neomake/neomake'
 " For editor color
 Plug 'phanviet/vim-monokai-pro'
 Plug 'micha/vim-colors-solarized'
+" Async format
+Plug 'mhinz/vim-mix-format'
 
 " List ends here, plugins available after this call
 " You also need to run :PlugInstall
