@@ -16,6 +16,8 @@ Plug 'phanviet/vim-monokai-pro'
 Plug 'micha/vim-colors-solarized'
 " Async format
 Plug 'mhinz/vim-mix-format'
+" HTML
+Plug 'mattn/emmet-vim'
 
 " List ends here, plugins available after this call
 " You also need to run :PlugInstall
@@ -47,3 +49,15 @@ let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|deps\|_build'
 call neomake#configure#automake('w')
 
 let g:neomake_open_list = 2
+
+" Formatting
+autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
+autocmd FileType html       setlocal shiftwidth=2 tabstop=2
+autocmd FileType elixir     setlocal shiftwidth=2 tabstop=2
+
+" JS Folding
+"-- FOLDING --
+set foldmethod=syntax "syntax highlighting items specify folds
+set foldcolumn=1 "defines 1 col at window left, to indicate folding
+let javaScript_fold=1 "activate folding by JS syntax
+set foldlevelstart=99 "start file with all folds opened
