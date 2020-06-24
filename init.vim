@@ -1,5 +1,12 @@
+" vim-plug autoconfig if not already installed
+if empty(glob('~/.config/nvim/autoload/plug.vim'))
+  silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall
+endif
+
 " Configuration for NeoVim
-call plug#begin()
+call plug#begin('~/.config/nvim/plugged')
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 
@@ -9,7 +16,14 @@ Plug 'sbdchd/neoformat'
 Plug 'mattn/emmet-vim'
 " Elixir
 Plug 'elixir-lang/vim-elixir'
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'slashmili/alchemist'
+if has('nvim')
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+  Plug 'Shougo/deoplete.nvim'
+  Plug 'roxma/nvim-yarp'
+  Plug 'roxma/vim-hug-neovim-rpc'
+endif
 Plug 'slashmili/alchemist.vim'
 Plug 'tpope/vim-fugitive'
 " Airline
@@ -71,9 +85,9 @@ let g:neomake_elixir_credo_check_maker = {
         \ 'postprocess': function('NeomakeCredoErrorType')
         \ }
 " deoplete
-let g:deoplete#auto_complete_start_length = 1
+"let g:deoplete#auto_complete_start_length = 1
 let g:deoplete#enable_at_startup = 1
-let g:deoplete#enable_smart_case = 1
+"let g:deoplete#enable_smart_case = 1
 inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 
 " vim options
@@ -189,3 +203,8 @@ let g:netrw_winsize = 25
 augroup TerminalStuff
   autocmd TermOpen * setlocal nonumber norelativenumber
 augroup END
+let g:deoplete#enable_at_startup = 1
+call deoplete#custom#option({
+    \ 'auto_complete_delay': 100,
+    \ 'smart_case': v:true,
+    \ })
