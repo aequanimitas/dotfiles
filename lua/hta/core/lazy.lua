@@ -23,6 +23,36 @@ require("lazy").setup({
         { 'https://github.com/rose-pine/neovim', name = 'rose-pine', lazy = true },
 
         -- syntax highlighting
-        {"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"}
+        {"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"},
+
+        -- LSP
+        ---- make cmp work first
+        {
+            'hrsh7th/nvim-cmp',
+            event = 'InsertEnter',
+            dependencies = {
+                {'hrsh7th/cmp-buffer'},
+                {'hrsh7th/cmp-path'},
+                {'L3MON4D3/LuaSnip'},
+                {"onsails/lspkind.nvim"},
+                {'saadparwaiz1/cmp_luasnip'}
+            },
+        },
+        --- for the actual lsp
+        {
+            "williamboman/mason.nvim",
+            dependencies = {
+                "williamboman/mason-lspconfig.nvim",
+                "WhoIsSethDaniel/mason-tool-installer.nvim",
+            }
+        },
+        {
+            "neovim/nvim-lspconfig",
+            event = { "BufReadPre", "BufNewFile" },
+            dependencies = {
+                "hrsh7th/cmp-nvim-lsp",
+                { "antosha417/nvim-lsp-file-operations", config = true },
+            }
+        }
     }
 })
