@@ -9,4 +9,7 @@ vim.opt.colorcolumn = '80'      -- Line lenght marker at 80 columns
 vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
 vim.opt.smartindent = false
-vim.opt.foldmethod = 'indent'
+-- vim.opt.foldmethod = 'indent'
+
+vim.opt.foldexpr = 'v:lua.vim.treesitter.foldexpr()'
+vim.opt.foldmethod = 'expr'
