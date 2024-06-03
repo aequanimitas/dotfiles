@@ -53,6 +53,11 @@ require("lazy").setup({
                 "hrsh7th/cmp-nvim-lsp",
                 { "antosha417/nvim-lsp-file-operations", config = true },
             }
+        },
+        {
+          'mrcjkb/rustaceanvim',
+          version = '^5', -- Recommended
+          lazy = false, -- This plugin is already lazy
         }
     }
 })

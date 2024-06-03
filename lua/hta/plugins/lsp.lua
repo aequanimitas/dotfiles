@@ -1,4 +1,5 @@
 local lspconfig = require("lspconfig")
+local util = require "lspconfig.util"
 
 -- import cmp-nvim-lsp plugin
 local cmp_nvim_lsp = require("cmp_nvim_lsp")
@@ -83,11 +84,11 @@ lspconfig["cssls"].setup({
 })
 
 -- configure tailwindcss server
-lspconfig["tailwindcss"].setup({
-    capabilities = capabilities,
-    on_attach = on_attach,
-    filetypes = { "css" }
-})
+-- lspconfig["tailwindcss"].setup({
+--     capabilities = capabilities,
+--     on_attach = on_attach,
+--     filetypes = { "css" }
+-- })
 
 -- configure tailwindcss server
 lspconfig["elixirls"].setup({
@@ -137,6 +138,21 @@ lspconfig["emmet_ls"].setup({
 lspconfig["pyright"].setup({
     capabilities = capabilities,
     on_attach = on_attach,
+})
+
+-- https://github.com/rust-lang/rust-analyzer/issues/15404#issue-1838053507
+lspconfig["rust_analyzer"].setup({
+    capabilities = capabilities,
+    on_attach = on_attach,
+    filetypes = { "rust" },
+    root_dir = util.root_pattern("Cargo.toml"),
+    settings = {
+        ["rust_analyzer"] = {
+            cargo = {
+                allFeatures = true
+            }
+        }
+    }
 })
 
 -- configure lua server (with special settings)
